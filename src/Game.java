@@ -167,7 +167,6 @@ public class Game implements ActionListener{
 	//Description: Uses the given row and column and the empty cell information to find the next cell avalible to move to
 	//Parameter: The row and column of the current cell
 	//Return: True if it can be moved, false if not.
-	//Took reference from https://github.com/amadamala/fifteen-puzzle/blob/master/JavaVersion/FifteenPuzzle.java
 	public boolean Move(int row, int col) {
 		//Gets the row of the current empty cell
 		int empcellrol = empcell / 4;
@@ -247,8 +246,6 @@ public class Game implements ActionListener{
 	//Description: Checks if the board is solvable by checks various of conditions
 	//Parameter: The puzzle in arraylist form
 	//Return: True if the puzzle is solvable, false if not.
-	//Code taken from https://stackoverflow.com/questions/34570344/check-if-15-puzzle-is-solvable
-	//Original Author: user4918296
 	private boolean solvable(ArrayList<Integer> puzzle)
 	{
 		int parity = 0;
